@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Manchester Shop</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="flex-start">
+                <div id="logo">
+                    <a href="/" id="logo">
+                        <img src="//assets.manutd.com/AssetPicker/images/0/0/11/201/772402/Manchester_United_Crest_Comp_180x1801550591475296.png"
+                            alt="Man Utd">
+                    </a>
+                </div>
+                <div id="search">
+                    <input type="text" placeholder="Search">
+                    <div id="search-icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
+                            width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                    d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div id="setting-icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
+                            width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4 7H3V2h1v5zm-1 7h1v-3H3v3zm5 0h1V8H8v6zm5 0h1v-2h-1v2zm1-12h-1v6h1V2zM9 2H8v2h1V2zM5 8H2c-.55 0-1 .45-1 1s.45 1 1 1h3c.55 0 1-.45 1-1s-.45-1-1-1zm5-3H7c-.55 0-1 .45-1 1s.45 1 1 1h3c.55 0 1-.45 1-1s-.45-1-1-1zm5 4h-3c-.55 0-1 .45-1 1s.45 1 1 1h3c.55 0 1-.45 1-1s-.45-1-1-1z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div id="coin">
+                    <div id="coin-icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
+                            width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 22c3.976 0 8-1.374 8-4V6c0-2.626-4.024-4-8-4S4 3.374 4 6v12c0 2.626 4.024 4 8 4zm0-2c-3.722 0-6-1.295-6-2v-1.268C7.541 17.57 9.777 18 12 18s4.459-.43 6-1.268V18c0 .705-2.278 2-6 2zm0-16c3.722 0 6 1.295 6 2s-2.278 2-6 2-6-1.295-6-2 2.278-2 6-2zM6 8.732C7.541 9.57 9.777 10 12 10s4.459-.43 6-1.268V10c0 .705-2.278 2-6 2s-6-1.295-6-2V8.732zm0 4C7.541 13.57 9.777 14 12 14s4.459-.43 6-1.268V14c0 .705-2.278 2-6 2s-6-1.295-6-2v-1.268z">
+                            </path>
+                        </svg>
+                    </div>
+                    <button type="button">Coin: 2,500,782.00</button>
+                </div>
+            </div>
+            <div class="flex-end">
+                <div class="g-icon">
+                    <div class="set-button">
+                        <button type="button">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M832 312H696v-16c0-101.6-82.4-184-184-184s-184 82.4-184 184v16H192c-17.7 0-32 14.3-32 32v536c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V344c0-17.7-14.3-32-32-32zm-208 0H400v-16c0-61.9 50.1-112 112-112s112 50.1 112 112v16z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="set-button">
+                        <button type="button">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M923 283.6a260.04 260.04 0 0 0-56.9-82.8 264.4 264.4 0 0 0-84-55.5A265.34 265.34 0 0 0 679.7 125c-49.3 0-97.4 13.5-139.2 39-10 6.1-19.5 12.8-28.5 20.1-9-7.3-18.5-14-28.5-20.1-41.8-25.5-89.9-39-139.2-39-35.5 0-69.9 6.8-102.4 20.3-31.4 13-59.7 31.7-84 55.5a258.44 258.44 0 0 0-56.9 82.8c-13.9 32.3-21 66.6-21 101.9 0 33.3 6.8 68 20.3 103.3 11.3 29.5 27.5 60.1 48.2 91 32.8 48.9 77.9 99.9 133.9 151.6 92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3 56-51.7 101.1-102.7 133.9-151.6 20.7-30.9 37-61.5 48.2-91 13.5-35.3 20.3-70 20.3-103.3.1-35.3-7-69.6-20.9-101.9z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="set-button">
+                        <button type="button">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M255.9 456c31.1 0 48.1-22 48.1-53h-96.3c0 31 17 53 48.2 53zM412 352.2c-15.4-20.3-45.7-32.2-45.7-123.1 0-93.3-41.2-130.8-79.6-139.8-3.6-.9-6.2-2.1-6.2-5.9v-2.9c0-13.4-11-24.7-24.4-24.6-13.4-.2-24.4 11.2-24.4 24.6v2.9c0 3.7-2.6 5-6.2 5.9-38.5 9.1-79.6 46.5-79.6 139.8 0 90.9-30.3 102.7-45.7 123.1-9.9 13.1-.5 31.8 15.9 31.8h280.1c16.3 0 25.7-18.8 15.8-31.8z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="set-button">
+                    <button id="more-bg" type="button"><svg stroke="currentColor" fill="none" stroke-width="0"
+                            viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7 14C8.10457 14 9 13.1046 9 12C9 10.8954 8.10457 10 7 10C5.89543 10 5 10.8954 5 12C5 13.1046 5.89543 14 7 14Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M17 14C18.1046 14 19 13.1046 19 12C19 10.8954 18.1046 10 17 10C15.8954 10 15 10.8954 15 12C15 13.1046 15.8954 14 17 14Z"
+                                fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                fill="currentColor"></path>
+                        </svg></button>
+                </div>
+                <div class="set-button">
+                    <button id="bg-img" type="button"></button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="menu-item">
+            <div class="scroll-item">
+                <div class="item">
+                    <button type="button">
+                        <div class="set-picture" id="maguire">
+                        </div>Harry Maguire
+                    </button>
+                </div>
+                <div class="item">
+                    <button type="button">
+                        <div class="set-picture" id="rashford">
+                        </div>Marcus Rashford
+                    </button>
+                </div>
+                <div class="item">
+                    <button type="button">
+                        <div class="set-picture" id="antony">
+                        </div>Antony
+                    </button>
+                </div>
+                <div class="item">
+                    <button type="button">
+                        <div class="set-picture" id="bruno">
+                        </div>Bruno Fernandes
+                    </button>
+                </div>
+                <div class="item">
+                    <button type="button">
+                        <div class="set-picture" id="de-gea">
+                        </div>David De Gea
+                    </button>
+                </div>
+                <div class="item">
+                    <button type="button">
+                        <div class="set-picture" id="sancho">
+                        </div>Jadon Sancho
+                    </button>
+                </div>
+                <div class="item">
+                    <button type="button">
+                        <div class="set-picture" id="casemiro">
+                        </div>Casemiro
+                    </button>
+                </div>
+                <div class="item">
+                    <button type="button">
+                        <div class="set-picture" id="eriksen">
+                        </div>Christian Eriksen
+                    </button>
+                </div>
+                <div class="item">
+                    <button type="button">
+                        <div class="set-picture" id="martinez">
+                        </div>Lisandro Martinez
+                    </button>
+                </div>
+                <div class="item">
+                    <button type="button">
+                        <div class="set-picture" id="varane">
+                        </div>Raphael Varane
+                    </button>
+                </div>
+                <div class="item">
+                    <button type="button">
+                        <div class="set-picture" id="dalot">
+                        </div>Diogo Dalot
+                    </button>
+                </div>
+                <div class="item">
+                    <button type="button">
+                        <div class="set-picture" id="shaw">
+                        </div>Luke Shaw
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left-menu">
+                <div>
+                    <p>Gender/Age</p>
+                    <form action="/action_page.php">
+                        <label class="container-checkbox">Men
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Women
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Kids
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">baby
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <p>Featured Departments</p>
+                    <form action="/action_page.php">
+                        <label class="container-checkbox">Football Kits
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Scarves
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Training
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Sale Item
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <p>Kit Type</p>
+                    <form action="/action_page.php">
+                        <label class="container-checkbox">Home
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Away
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Third
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Goalkeeper
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <p>Players</p>
+                    <form action="/action_page.php">
+                        <label class="container-checkbox">Marcus Rashford
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Carlos Casemiro
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Lisandro Martínez
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Bruno Fernandes
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Alejandro Garnacho
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Antony
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Christian Eriksen
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Wout Weghorst
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <p>Popular Collections</p>
+                    <form action="/action_page.php">
+                        <label class="container-checkbox">Hot New Arrivals
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <p>Featured Brands</p>
+                    <form action="/action_page.php">
+                        <label class="container-checkbox">Adidas
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Maui Jim
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">New Era
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Paul Smith
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-checkbox">Remington
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="product">
+                <div class="menu-home">
+                    <p class="home-cleanizer">Home</p>
+                    <p class="home-cleanizer">></p>
+                    <div class="mawar-shop">
+                        <div class="mawar-shop-icon">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M882 272.1V144c0-17.7-14.3-32-32-32H174c-17.7 0-32 14.3-32 32v128.1c-16.7 1-30 14.9-30 31.9v131.7a177 177 0 0 0 14.4 70.4c4.3 10.2 9.6 19.8 15.6 28.9v345c0 17.6 14.3 32 32 32h676c17.7 0 32-14.3 32-32V535a175 175 0 0 0 15.6-28.9c9.5-22.3 14.4-46 14.4-70.4V304c0-17-13.3-30.9-30-31.9zM214 184h596v88H214v-88zm362 656.1H448V736h128v104.1zm234 0H640V704c0-17.7-14.3-32-32-32H416c-17.7 0-32 14.3-32 32v136.1H214V597.9c2.9 1.4 5.9 2.8 9 4 22.3 9.4 46 14.1 70.4 14.1s48-4.7 70.4-14.1c13.8-5.8 26.8-13.2 38.7-22.1.2-.1.4-.1.6 0a180.4 180.4 0 0 0 38.7 22.1c22.3 9.4 46 14.1 70.4 14.1 24.4 0 48-4.7 70.4-14.1 13.8-5.8 26.8-13.2 38.7-22.1.2-.1.4-.1.6 0a180.4 180.4 0 0 0 38.7 22.1c22.3 9.4 46 14.1 70.4 14.1 24.4 0 48-4.7 70.4-14.1 3-1.3 6-2.6 9-4v242.2zm30-404.4c0 59.8-49 108.3-109.3 108.3-40.8 0-76.4-22.1-95.2-54.9-2.9-5-8.1-8.1-13.9-8.1h-.6c-5.7 0-11 3.1-13.9 8.1A109.24 109.24 0 0 1 512 544c-40.7 0-76.2-22-95-54.7-3-5.1-8.4-8.3-14.3-8.3s-11.4 3.2-14.3 8.3a109.63 109.63 0 0 1-95.1 54.7C233 544 184 495.5 184 435.7v-91.2c0-.3.2-.5.5-.5h655c.3 0 .5.2.5.5v91.2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p>Manchester Shop</p>
+                    </div>
+                </div>
+                <div class="contact-section">
+                    <div class="card-mawar-shop">
+                        <div class="picture-card"></div>
+                        <div class="manu-online">
+                            <div class="manushopofficial">
+                                <div class="icon-manu1">
+
+                                </div>
+                                <div class="text-shop-manu"> Manchester Shop official</div>
+                                <div class="icon-true"><svg fill="currentColor" viewBox="0 0 12 13" width="1em"
+                                        height="1em"
+                                        class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan"
+                                        title="ได้รับการตรวจสอบยืนยันบัญชีแล้ว">
+                                        <title>ได้รับการตรวจสอบยืนยันบัญชีแล้ว</title>
+                                        <g fill-rule="evenodd" transform="translate(-98 -917)">
+                                            <path
+                                                d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819">
+                                            </path>
+                                        </g>
+                                    </svg></div>
+                                <div></div>
+                            </div>
+                            <div class="online">
+                                <div><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                                    </svg></div>
+                                <div>Online</div>
+                            </div>
+                        </div>
+                        <div class="follow-chat">
+                            <div class="follow">
+                                <p>Follow</p>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" t="1551322312294"
+                                    viewBox="0 0 1024 1024" version="1.1" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <defs></defs>
+                                    <path d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z">
+                                    </path>
+                                    <path d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="chat">
+                                <p>Chat</p>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-section-right">
+                        <div class="contact-section-right-top">
+                            <div class="statistics">
+                                <div class="statistics-section1">
+                                    <div class="set-statistics-section">
+                                        <div class="set-color-icon">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 16 16" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="text-product">
+                                            <div>
+                                                <p>Products:</p>
+                                            </div>
+                                            <div>
+                                                <p class="font-blue">600</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="set-statistics-section">
+                                        <div class="set-color-icon">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 16 16" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="text-product">
+                                            <div>
+                                                <p>Followers:</p>
+                                            </div>
+                                            <div>
+                                                <p class="font-blue">40.5K</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="set-statistics-section">
+                                        <div class="set-color-icon">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path
+                                                        d="M13 14.062V22H4a8 8 0 0 1 9-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm5.793 6.914l3.535-3.535 1.415 1.414-4.95 4.95-3.536-3.536 1.415-1.414 2.12 2.121z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="text-product">
+                                            <div>
+                                                <p>Following:</p>
+                                            </div>
+                                            <div>
+                                                <p class="font-blue">1.5K</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="statistics-section2">
+                                    <div class="set-statistics-section">
+                                        <div class="set-color-icon">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 1024 1024" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="text-product">
+                                            <div>
+                                                <p>Raing:</p>
+                                            </div>
+                                            <div>
+                                                <p class="font-blue">4.9</p>
+                                            </div>
+                                            <div>
+                                                <p class="font-gray">(30.2k reviews)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="set-statistics-section">
+                                        <div class="set-color-icon">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 16 16" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="text-product">
+                                            <div>
+                                                <p>Chat performance:</p>
+                                            </div>
+                                            <div>
+                                                <p class="font-blue">93%</p>
+                                            </div>
+                                            <div>
+                                                <p class="font-gray">(Within hours)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="set-statistics-section">
+                                        <div class="set-color-icon">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="text-product">
+                                            <div>
+                                                <p>Joined:</p>
+                                            </div>
+                                            <div>
+                                                <p class="font-blue">4 years ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="awards-for-top-shop">
+                                <p class="set-size-color">Awards for top shop</p>
+                                <div class="set-color-icon-white-size">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 512 512" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M256.156 21.625c-45.605 0-86.876 2.852-117.22 7.563-15.17 2.355-27.554 5.11-36.874 8.53-4.66 1.71-8.568 3.515-11.968 6.094-3.238 2.457-6.65 6.36-6.97 11.75h-.75c0 10.08.362 20.022 1.064 29.813H57.53c-.12-7.952.003-15.922.376-23.875l-26.812-6.28C22.55 161.892 64.1 265.716 140.564 339.655l15.655-29.594c-4.198-3.477-8.25-7.063-12.157-10.75 5.846-6.112 12.293-11.76 19.28-16.843 13.468 13.172 28.182 23.565 43.813 30.655 22.114 17.744 8.053 29.368-23.5 36.25 58.863 10.6 38.948 62.267-14.125 92.313-2.14.27-4.256.523-6.28.812-12.047 1.718-21.876 3.71-29.406 6.25-3.765 1.27-6.958 2.6-9.906 4.656-2.95 2.055-6.626 5.705-6.626 11.406 0 5.702 3.677 9.32 6.626 11.375 2.948 2.055 6.14 3.387 9.906 4.657 7.53 2.54 17.36 4.532 29.406 6.25 24.094 3.436 56.784 5.53 92.906 5.53 36.123 0 68.812-2.094 92.906-5.53 12.048-1.718 21.877-3.71 29.407-6.25 3.764-1.27 6.957-2.602 9.905-4.656 2.948-2.055 6.625-5.674 6.625-11.375 0-5.702-3.677-9.352-6.625-11.407-2.948-2.055-6.14-3.387-9.906-4.656-7.53-2.54-17.36-4.532-29.408-6.25-2.013-.287-4.12-.544-6.25-.813-53.076-30.045-72.99-81.71-14.125-92.312-31.568-6.886-45.63-18.522-23.468-36.28 15.74-7.15 30.547-17.655 44.092-30.97 6.648 4.773 12.84 10.038 18.47 15.72-4.105 4.172-8.338 8.257-12.72 12.217l16.188 29.594c79.118-71.955 116.195-179.53 110.03-285l-27.342 7.97c.45 7.61.64 15.19.562 22.75h-25.594c.702-9.792 1.063-19.735 1.063-29.814h-.75c-.323-5.39-3.763-9.293-7-11.75-3.402-2.58-7.31-4.383-11.97-6.093-9.32-3.422-21.704-6.177-36.875-8.532-30.342-4.71-71.613-7.563-117.22-7.563zm0 18.688c44.822 0 85.426 2.854 114.344 7.343 14.46 2.245 26.06 4.932 33.313 7.594 1.04.382 1.775.75 2.625 1.125-.85.375-1.58.742-2.625 1.125-7.252 2.662-18.854 5.38-33.313 7.625-28.918 4.49-69.522 7.344-114.344 7.344-44.82 0-85.425-2.855-114.344-7.345-14.46-2.245-26.06-4.963-33.312-7.625-1.05-.386-1.77-.748-2.625-1.125.853-.376 1.577-.74 2.625-1.125 7.252-2.662 18.853-5.35 33.313-7.594 28.918-4.49 69.522-7.343 114.343-7.343zm-197.25 71.874H86.25c8.057 57.878 28.23 108.83 56.188 146.25-6.974 5.74-13.407 11.968-19.188 18.688-38.648-46.456-59.042-104.647-64.344-164.938zm367.188 0h27C447.51 171.82 425.336 228.34 388.03 275c-5.44-6.055-11.406-11.73-17.842-16.97 27.81-37.38 47.873-88.175 55.906-145.842z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="awards-for-top-shop">
+                                <p class="set-size-color">Best seller of the year</p>
+                                <div class="set-color-icon-white-size">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 8h-5.612l1.123-3.367c.202-.608.1-1.282-.275-1.802S14.253 2 13.612 2H12c-.297 0-.578.132-.769.36L6.531 8H4c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2h13.307a2.01 2.01 0 0 0 1.873-1.298l2.757-7.351A1 1 0 0 0 22 12v-2c0-1.103-.897-2-2-2zM4 10h2v9H4v-9zm16 1.819L17.307 19H8V9.362L12.468 4h1.146l-1.562 4.683A.998.998 0 0 0 13 10h7v1.819z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-all">
+                            <div class="set-contact">
+                                <div class="set-color-icon-contact">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path
+                                            d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 00-1.02.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.36 11.36 0 018.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2a9 9 0 00-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="set-color-text-contact">+66 666666 6666</p>
+                            </div>
+                            <div class="set-contact">
+                                <div class="set-color-icon-contact">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 1024 1024" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="set-color-text-contact">@manchesterunited</p>
+                            </div>
+                            <div class="set-contact">
+                                <div class="set-color-icon-contact">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 1024 1024" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="set-color-text-contact">Manchester United</p>
+                            </div>
+                            <div class="set-contact set-contact-border-none">
+                                <div class="set-color-icon-contact">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 1024 1024" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133-232 135z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="set-color-text-contact">Manchester United</p>
+                            </div>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-products-section">
+                    <p>KITS</p>
+                    <p>TRAINING</p>
+                    <p>SHOP BY PLAYER</p>
+                    <p>MEN</p>
+                    <p>WOMEN</p>
+                    <p>KIDS</p>
+                    <p>CLEARANCE</p>
+                    <p>More</p>
+                </div>
+                <div class="products-section">
+                    <div class="setcard-product">
+                        <div class="picture-card-product" id="manu-third-shirt"></div>
+                        <div class="section-text-product">
+                            <div class="name-product">
+                                <p class="set-font-size-product">Manchester United Third Shirt 2022-23</p>
+                            </div>
+                            <div class="buy-product">
+                                <p class="set-font-size-product">£22</p>
+                                <button type="button">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setcard-product">
+                        <div class="picture-card-product" id="manu-third-shirt-kid"></div>
+                        <div class="section-text-product">
+                            <div class="name-product">
+                                <p class="set-font-size-product">Manchester United Home Shirt 2022-23 - Kids</p>
+                            </div>
+                            <div class="buy-product">
+                                <p class="set-font-size-product">£26</p>
+                                <button type="button">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setcard-product">
+                        <div class="picture-card-product" id="manu-away-shirt"></div>
+                        <div class="section-text-product">
+                            <div class="name-product">
+                                <p class="set-font-size-product">Manchester United Away Shirt 2022-23</p>
+                            </div>
+                            <div class="buy-product">
+                                <p class="set-font-size-product">£34</p>
+                                <button type="button">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setcard-product">
+                        <div class="picture-card-product" id="manu-rashford-shirt"></div>
+                        <div class="section-text-product">
+                            <div class="name-product">
+                                <p class="set-font-size-product">Manchester United Home Shirt 2022-23 with Rashford 10
+                                    printing</p>
+                            </div>
+                            <div class="buy-product">
+                                <p class="set-font-size-product">£60</p>
+                                <button type="button">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setcard-product">
+                        <div class="picture-card-product" id="manu-premath-white"></div>
+                        <div class="section-text-product">
+                            <div class="name-product">
+                                <p class="set-font-size-product">Manchester United Pre Match Top - White</p>
+                            </div>
+                            <div class="buy-product">
+                                <p class="set-font-size-product">£18</p>
+                                <button type="button">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setcard-product">
+                        <div class="picture-card-product" id="manu-training-stadium"></div>
+                        <div class="section-text-product">
+                            <div class="name-product">
+                                <p class="set-font-size-product">Manchester United Training Stadium Parka Jacket - Navy
+                                </p>
+                            </div>
+                            <div class="buy-product">
+                                <p class="set-font-size-product">£59</p>
+                                <button type="button">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="bottom-menu"></div> -->
+    </main>
+    <div></div>
+</body>
+
+</html>

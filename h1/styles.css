@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+html,  body {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1300px;
+    /* margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    padding: 0.875rem;
+}
+
+nav {
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color: whitesmoke;
+    /* background-color: red; */
+
+}
+
+.nav-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+}
+
+.nav-items ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+    transform: scale(1.08);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    transition: all 0.2s ease;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+}
+
+#button-sign {
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    padding: 0.25rem 1rem;
+    transition: all 0.2s ease;
+}
+
+#button-sign:hover {
+    transform: scale(1.08);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#h1-text {
+    font-size: 5rem;
+    width: 400px;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+}
+
+/* #p-text {
+    font-size: 1rem;
+    width: 400px;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+} */
+
+
+/* h1 {
+    /* text-align: center; */
+/* } */
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+
+}
+
+#serch {
+    border-radius: 25px;
+    padding: 0.25rem 3rem;
+    
+}
+
+.picture-top {
+
+    background-image: url("https://beachviewholidaypark.co.uk/wp-content/uploads/2020/07/Seabreeze-Lodge-Stunning-Sea-Vews-Suffolk-2020-1240x797.jpg");
+    color: #FFFFFF;
+    border-radius: 25px;
+    height: 25rem;
+    padding: 5%;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+    background-size: 795px 407px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.picture-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    background-color: black;
+    color: #FFFFFF;
+    border-radius: 50px;
+    height: 4rem;
+    padding: 5%;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.picture-bottom-left {
+    font-size: 1.2rem;
+    background-image: url('https://i1.wp.com/ngthai.com/app/uploads/2017/05/ss1.jpg');
+    color: #FFFFFF;
+    border-radius: 25px;
+    height: 13rem;
+    width: 318px;
+    padding: 4%;
+    margin-right: 0.5rem;
+    background-size: 314px 208px;
+
+}
+
+.picture-bottom-right {
+    font-size: 1.2rem;
+    background-image: url('https://s.isanook.com/tr/0/ui/286/1430833/271533448_6752961471443963_4801461671345232400_n.jpg?ip/convert/w0/q80/webp');
+    color: #FFFFFF;
+    border-radius: 25px;
+    height: 13rem;
+    width: 318px;
+    padding: 4%;
+    background-size: 314px 208px;
+}
+
+section {
+    width: 636px;
+}
+
+.section-container section div p {
+    font-size: 1.1rem;
+    width: 400px;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+img {
+    border-radius: 50%;
+    width: 120;
+    height: 120px;
+  }
