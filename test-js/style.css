@@ -1,0 +1,771 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 32, 32);
+
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid RGBA(255, 255, 255, 0.2);
+}
+
+header nav {
+    height: 100%;
+    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 46rem;
+}
+
+.flex-start {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+}
+
+.g-icon {
+    display: flex;
+    flex-direction: row;
+    border-right: 1px solid RGBA(255, 255, 255, 0.2);
+    column-gap: 2rem;
+    padding-right: 2rem;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    transition: all 0.2s ease;
+}
+
+img {
+    width: 3rem;
+    height: 3rem;
+
+}
+
+#bg-img {
+    background-image: url("https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/272787031_2236037263225341_6332163010846572431_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF4K2qm3Xy74AGmIlDbzHONFeuPz7LpL3UV64_PsukvddoE-5WKSVPOWNwQXIrWprOgJS-vwvxze4IYYG3hoaiw&_nc_ohc=-wW-H7rlaLUAX-OqtrO&_nc_ht=scontent-sin6-2.xx&oh=00_AfAwZp0eTzcBQ2buO92tEaelKwIbAe1bgf6g9qNL0jVejw&oe=64628C4F");
+    background-size: 50px 50px;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+}
+
+#search {
+    position: relative;
+}
+
+#search-icon {
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+}
+
+#search input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: rgb(60, 60, 60);
+    height: 50px;
+    width: 500px;
+    border-radius: 120px;
+    padding-inline-start: 4rem;
+}
+
+#setting-icon {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    color: rgb(130, 130, 130);
+    font-size: 30px;
+    align-items: center;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(130, 130, 130);
+    opacity: 1;
+    /* Firefox */
+}
+
+#coin {
+    position: relative;
+}
+
+#coin button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: rgb(97, 35, 35);
+    color: rgb(255, 255, 255);
+    height: 50px;
+    width: 250px;
+    border-radius: 120px;
+    padding-inline-start: 2rem;
+}
+
+#coin-icon {
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    align-items: center;
+}
+
+.set-button button {
+    border: none;
+    outline: none;
+    background-color: rgb(60, 60, 60);
+    height: 50px;
+    width: 50px;
+    border-radius: 120px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 6px;
+
+}
+
+#more-bg {
+    background-color: rgb(32, 32, 32);
+    color: rgb(130, 130, 130);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    overflow-x: auto;
+    margin-left: 1.5rem;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.scroll-item::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.item button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    height: 45px;
+    width: 220px;
+    border-radius: 120px;
+    column-gap: 1rem;
+}
+
+.set-picture {
+    background-color: rgb(60, 60, 60);
+    height: 45px;
+    width: 45px;
+    border-radius: 120px;
+    background-size: 45px 45px;
+
+}
+
+#maguire {
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/16/247/1111864/Player_Profile_Thumbnail_Mens_2223_Kit_Maguire1658218520769.webp");
+
+}
+
+#rashford {
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/16/247/1111866/Player_Profile_Thumbnail_Mens_2223_Kit_Rashford1658219371866.webp");
+
+}
+
+#antony {
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/17/101/1139991/Antony_thumbnail_grid1662127295056.webp");
+
+}
+
+#bruno {
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/16/247/1111856/Player_Profile_Thumbnail_Mens_2223_Kit_bruno1658216905336.webp");
+
+}
+
+#de-gea {
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/16/247/1111858/Player_Profile_Thumbnail_Mens_2223_Kit_DDG1658217260527.webp");
+}
+
+#sancho {
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/18/41/1190347/PlayerProfile_Thumbnail_Jadon_Sancho1675366160762.webp");
+}
+
+#casemiro {
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/17/89/1137010/C_Player_Profile_Thumbnail_copy1661414109798.webp");
+}
+
+#eriksen {
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/17/3/1114946/CE_Player_Profile_Thumbnail1658929113165.jpg");
+}
+
+#martinez {
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/17/3/1114943/LM_Player_Profile_Thumbnail1658929466190.webp");
+}
+
+#varane {
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/16/247/1111870/Player_Profile_Thumbnail_Mens_2223_Kit_Varane1658219566190.webp");
+}
+
+#dalot {
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/16/247/1111857/Player_Profile_Thumbnail_Mens_2223_Kit_Dalot1658217740284.webp");
+}
+
+#shaw {
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/16/247/1111868/Player_Profile_Thumbnail_Mens_2223_Kit_Shaw1658219274983.webp");
+}
+
+.container {
+    height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid RGBA(255, 255, 255, 0.1);
+}
+
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    /* background-color: blueviolet; */
+    border-right: 1px solid RGBA(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.left-menu::-webkit-scrollbar {
+    height: 0;
+
+}
+
+.left-menu div p {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: 20px;
+    color: RGBA(255, 255, 255, 0.4);
+
+}
+
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+    left: 10px;
+    top: 3px;
+    width: 5px;
+    height: 12px;
+    border: solid black;
+    ;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    overflow-y: auto;
+    /* background-color: fuchsia; */
+}
+
+.product::-webkit-scrollbar {
+    height: 0;
+}
+
+.menu-home {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    padding: 2rem 0;
+    /* border-bottom: 1px solid white; */
+}
+
+.home-cleanizer {
+    color: rgb(130, 130, 130);
+    font-size: 26px;
+
+}
+
+.mawar-shop {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+
+}
+
+.mawar-shop p {
+    color: white;
+    font-size: 26px;
+}
+
+.mawar-shop-icon {
+    color: white;
+    font-size: 30px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.card-mawar-shop {
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    height: 332px;
+    border-radius: 20px;
+    background-color: rgb(60, 60, 60);
+    padding: 2rem;
+    row-gap: 1rem;
+
+}
+
+.picture-card {
+    background-color: white;
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/16/250/1112714/MicrosoftTeams_image1658248041684_xlarge.webp");
+    background-size: 492.85px 184.75px;
+    width: 100%;
+    height: 57%;
+    border-radius: 20px;
+}
+
+.manushopofficial {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+
+.manu-online {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.icon-manu1 {
+    background-color: white;
+    background-image: url("https://play-lh.googleusercontent.com/3PE1Fc7AxcO2wRb8NoZU5v5rIGqaDOfdCa6GTNhVTcHk6jq2JyyEjfgpvrTIi53rdmM=w240-h480-rw");
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+}
+
+.text-shop-manu {
+    color: white;
+    font-size: 22px;
+}
+
+.icon-true {
+    padding-top: 3px;
+    font-size: 22px;
+}
+
+.icon-true svg {
+    color: rgb(146, 244, 255);
+}
+
+.online {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    color: greenyellow;
+}
+
+.online svg {
+    padding-top: 4px;
+}
+
+.follow-chat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+.follow {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 235px;
+    border-radius: 25px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    align-items: center;
+    column-gap: 1rem;
+    padding-inline-start: 4rem;
+}
+
+.chat {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 235px;
+    border-radius: 25px;
+    background-color: RGBA(0, 0, 255, 0.15);
+    color: rgb(0, 132, 255);
+    align-items: center;
+    column-gap: 1rem;
+    border: 1px solid rgb(0, 132, 255);
+    padding-inline-start: 5rem;
+}
+
+.contact-section-right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.contact-section-right-top {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+
+}
+
+.statistics {
+    display: flex;
+    flex-direction: row;
+    width: 679px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgb(60, 60, 60);
+    padding: 2rem;
+    column-gap: 90px;
+}
+
+.statistics-section1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+}
+
+.statistics-section2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.set-statistics-section {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 18px;
+    column-gap: 1.5rem;
+
+}
+
+.set-color-icon {
+    color: rgb(180, 180, 180);
+}
+
+.text-product {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.3rem;
+}
+
+.font-blue {
+    color: rgb(97, 179, 255);
+}
+
+.font-gray {
+    color: rgb(180, 180, 180);
+}
+
+.awards-for-top-shop {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgb(171, 38, 38);
+    text-align: center;
+    padding: 2rem 3.5rem;
+    row-gap: 2rem;
+
+}
+
+.set-size-color {
+    font-size: 18px;
+    color: white;
+}
+
+.set-color-icon-white-size {
+    font-size: 60px;
+    color: white;
+}
+
+
+
+
+.contact-all {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    background-color: rgb(60, 60, 60);
+    align-items: center;
+
+}
+
+.set-contact {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    column-gap: 1rem;
+    border-right: 1px solid RGBA(255, 255, 255, 0.2);
+
+
+
+}
+
+.set-color-icon-contact {
+    font-size: 30px;
+    color: rgb(180, 180, 180);
+}
+
+.set-color-text-contact {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(206, 206, 206);
+}
+
+.set-contact-border-none {
+    border-right: 0px
+}
+
+.menu-products-section {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    padding: 2rem;
+    column-gap: 117px;
+    padding: 1rem 2rem;
+    margin: 3rem 0;
+    background-color: rgb(32, 32, 32);
+}
+
+.menu-products-section p {
+    color: rgb(130, 130, 130);
+    font-size: 26px;
+
+    box-shadow: inset 0 0 0 0 black;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+}
+
+.menu-products-section p:hover {
+    border-radius: 25px;
+    box-shadow: inset 300px 0 0 0 white;
+    color: rgb(60, 60, 60);
+}
+
+
+
+
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.setcard-product {
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+    height: 555px;
+    border-radius: 20px;
+    background-color: rgb(60, 60, 60);
+    row-gap: 21px;
+}
+
+.picture-card-product {
+    width: 100%;
+    height: 70%;
+    background-color: red;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: 100%;
+}
+
+#manu-third-shirt {
+    background-image: url("//images.footballfanatics.com/manchester-united/manchester-united-third-shirt-2022-23_ss4_p-13313262+u-8nhsa3vcjk95kdq67480+v-8dffa5ded49242148d8790219b2f62ba.jpg?_hv=2&w=340");
+}
+
+#manu-third-shirt-kid {
+    background-image: url("//images.footballfanatics.com/manchester-united/manchester-united-home-shirt-2022-23-kids_ss4_p-13307688+u-ezvzd4rz8bxh95cfkptl+v-5f5c5161f87f49c78bf48a3c9a20cc95.jpg?_hv=2&w=340");
+}
+
+#manu-away-shirt {
+    background-image: url("//images.footballfanatics.com/manchester-united/manchester-united-away-shirt-2022-23_ss4_p-13307691+u-183syu0k8suiiicaf1xe+v-406b7bb2a4174ef8981b639f3d729d17.jpg?_hv=2&w=340");
+}
+
+#manu-rashford-shirt {
+    background-image: url("//images.footballfanatics.com/manchester-united/manchester-united-home-shirt-2022-23-with-rashford-10-printing_ss4_p-13322478+u-zn1zzf4gchk8rvwt0amn+v-0bc37d01f41d4586af4ca01f95528e1d.jpg?_hv=2&w=340");
+}
+
+#manu-premath-white {
+    background-image: url("//images.footballfanatics.com/manchester-united/manchester-united-pre-match-top-white_ss4_p-13307728+u-vhn95pkslauys02jbj43+v-daa03dc2ce754147b920a05319daf01c.jpg?_hv=2&w=340");
+}
+
+#manu-training-stadium {
+    background-image: url("//images.footballfanatics.com/manchester-united/manchester-united-training-stadium-parka-jacket-navy_ss4_p-13313223+u-nt6y5yqvd42iswgcl9el+v-7af82a6ec48c46a183ec021e4030b203.jpg?_hv=2&w=340");
+}
+
+.section-text-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.set-font-size-product {
+    font-size: 26px;
+    color: white;
+}
+
+.name-product {
+    display: flex;
+    flex-direction: row;
+    width: 72%;
+}
+
+.buy-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.buy-product button {
+    height: 45px;
+    width: 90px;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(0, 132, 255);
+    border-radius: 25px;
+}
+
+/* .bottom-menu {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: chartreuse;
+} */
